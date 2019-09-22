@@ -339,6 +339,8 @@
 				<module>algorithms-miscellaneous-1</module>
 				<module>algorithms-miscellaneous-2</module>
 				<module>algorithms-miscellaneous-3</module>
+				<module>algorithms-miscellaneous-4</module>
+				<module>algorithms-miscellaneous-5</module>
 				<module>algorithms-sorting</module>
 				<module>animal-sniffer-mvn-plugin</module>
 				<module>annotations</module>
@@ -387,6 +389,12 @@
 				<!-- <module>core-java-modules/core-java-12</module> --> <!-- We haven't upgraded to java 12. Fixing in BAEL-10841 -->
 				<module>core-java-modules/core-java-8</module>
 				<module>core-java-modules/core-java-8-2</module>
+				<module>core-java-modules/core-java-annotations</module>
+				<module>core-java-modules/core-java-streams</module>
+				<module>core-java-modules/core-java-function</module>
+				<module>core-java-modules/core-java-lang-math</module>
+				<module>core-java-modules/core-java-datetime</module>
+				<module>core-java-modules/core-java-text</module>
 				<module>core-java-modules/core-java-lambdas</module>
                 <!--<module>core-java-modules/core-java-9</module> --> <!-- We haven't upgraded to java 9. Fixing in BAEL-10841 -->
                 <!--<module>core-java-modules/core-java-os</module> --> <!-- We haven't upgraded to java 9.-->
@@ -395,18 +403,22 @@
                 <module>core-java-modules/core-java-collections</module>
                 <module>core-java-modules/core-java-collections-list</module>
                 <module>core-java-modules/core-java-collections-list-2</module>
+                <module>core-java-modules/core-java-collections-list-3</module>
                 <module>core-java-modules/core-java-collections-array-list</module>
                 <module>core-java-modules/core-java-collections-set</module>
                 <module>core-java-modules/core-java-concurrency-basic</module>
                 <module>core-java-modules/core-java-concurrency-collections</module>
                 <module>core-java-modules/core-java-io</module>
+                <module>core-java-modules/core-java-io-files</module>
                 <module>core-java-modules/core-java-nio</module>
                 <module>core-java-modules/core-java-security</module>
                 <module>core-java-modules/core-java-lang-syntax</module>
+                <module>core-java-modules/core-java-lang-syntax-2</module>
                 <module>core-java-modules/core-java-lang</module>
 				<module>core-java-modules/core-java-lang-2</module>
                 <module>core-java-modules/core-java-lang-oop</module>
                 <module>core-java-modules/core-java-lang-oop-2</module>
+				<module>core-java-modules/core-java-lang-oop-3</module>
                 <module>core-java-modules</module>
                 <module>core-java-modules/core-java-networking</module>
                 <module>core-java-modules/core-java-perf</module>
@@ -441,6 +453,7 @@
                 <module>grpc</module>
                 <module>gson</module>
                 <module>guava</module>
+				<module>guava-io</module>
                 <module>guava-collections</module>
 				<module>guava-collections-set</module>
                 <module>guava-modules</module>
@@ -535,6 +548,7 @@
 				<module>metrics</module>
 				<!-- <module>micronaut</module> --> <!-- Fixing in BAEL-10877 -->
 				<module>microprofile</module>
+                <module>ml</module>
 				<module>msf4j</module>
 				<!-- <module>muleesb</module> --> <!-- Fixing in BAEL-10878 -->
 				<module>mustache</module>
@@ -579,7 +593,7 @@
 				
 				<module>spring-boot-nashorn</module>
 				<module>java-blockchain</module>
-				<!-- <module>Twitter4J</module> --> <!-- Builds locally, but fails in Jenkins, Failed to parse POMs -->
+			
 			</modules>
 
 		</profile>
@@ -741,6 +755,7 @@
 				<module>spring-remoting</module>
 				<module>spring-rest</module>
 				<module>spring-rest-angular</module>
+				<module>spring-rest-compress</module>
 				<module>spring-rest-full</module>
 				<module>spring-rest-hal-browser</module>
 				<module>spring-rest-query-language</module>
@@ -928,6 +943,7 @@
 				<module>spring-remoting/remoting-rmi/remoting-rmi-server</module>
 				<module>spring-rest</module>
 				<module>spring-rest-angular</module>
+				<module>spring-rest-compress</module>
 				<module>spring-rest-full</module>
 				<module>spring-rest-simple</module>
 				<module>spring-resttemplate</module>
@@ -1066,6 +1082,8 @@
 				<module>algorithms-miscellaneous-1</module>
 				<module>algorithms-miscellaneous-2</module>
 				<module>algorithms-miscellaneous-3</module>
+				<module>algorithms-miscellaneous-4</module>
+				<module>algorithms-miscellaneous-5</module>
 				<module>algorithms-sorting</module>
 				<module>animal-sniffer-mvn-plugin</module>
 				<module>annotations</module>
@@ -1111,6 +1129,12 @@
 				<!-- <module>core-java-modules/core-java-11</module> --> <!-- We haven't upgraded to java 11. Fixing in BAEL-10841 -->
 				<module>core-java-modules/core-java-8</module>
 				<module>core-java-modules/core-java-8-2</module>
+				<module>core-java-modules/core-java-annotations</module>
+				<module>core-java-modules/core-java-streams</module>
+				<module>core-java-modules/core-java-function</module>
+				<module>core-java-modules/core-java-lang-math</module>
+				<module>core-java-modules/core-java-datetime</module>
+				<module>core-java-modules/core-java-text</module>
 				<!--<module>core-java-modules/core-java-9</module> --> <!-- We haven't upgraded to java 9. Fixing in BAEL-10841 -->
 				<!--<module>core-java-modules/core-java-os</module> --> <!-- We haven't upgraded to java 9.-->
 				<module>core-java-modules/core-java-arrays</module>
@@ -1118,18 +1142,22 @@
 				<module>core-java-modules/core-java-collections</module>
 				<module>core-java-modules/core-java-collections-list</module>
 				<module>core-java-modules/core-java-collections-list-2</module>
+				<module>core-java-modules/core-java-collections-list-3</module>
 				<module>core-java-modules/core-java-collections-array-list</module>
 				<module>core-java-modules/core-java-collections-set</module>
 				<module>core-java-modules/core-java-concurrency-basic</module>
 				<module>core-java-modules/core-java-concurrency-collections</module>
 				<module>core-java-modules/core-java-io</module>
+				<module>core-java-modules/core-java-io-files</module>
 				<module>core-java-modules/core-java-nio</module>
 				<module>core-java-modules/core-java-security</module>
 				<module>core-java-modules/core-java-lang-syntax</module>
+				<module>core-java-modules/core-java-lang-syntax-2</module>
 				<module>core-java-modules/core-java-lang</module>
 				<module>core-java-modules/core-java-lang-2</module>
 				<module>core-java-modules/core-java-lang-oop</module>
 				<module>core-java-modules/core-java-lang-oop-2</module>
+				<module>core-java-modules/core-java-lang-oop-3</module>
 				<module>core-java-modules</module>
 				<module>core-java-modules/core-java-networking</module>
 				<module>core-java-modules/core-java-perf</module>
@@ -1161,6 +1189,7 @@
 				<module>grpc</module>
 				<module>gson</module>
 				<module>guava</module>
+				<module>guava-io</module>
 				<module>guava-collections</module>
 				<module>guava-collections-set</module>
 				<module>guava-modules</module>
@@ -1251,6 +1280,7 @@
 				<module>metrics</module>
 				<!-- <module>micronaut</module> --> <!-- Fixing in BAEL-10877 -->
 				<module>microprofile</module>
+                <module>ml</module>
 				<module>msf4j</module>
 				<!-- <module>muleesb</module> --> <!-- Fixing in BAEL-10878 -->
 				<module>mustache</module>
@@ -1433,6 +1463,7 @@
 				<module>spring-remoting</module>
 				<module>spring-rest</module>
 				<module>spring-rest-angular</module>
+				<module>spring-rest-compress</module>
 				<module>spring-rest-full</module>
 				<module>spring-rest-hal-browser</module>
 				<module>spring-rest-query-language</module>
